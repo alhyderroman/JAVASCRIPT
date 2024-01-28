@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <p class="text-2xl">Click the button to demonstrate the prompt box.</p>
+
+    <button class="btn bg-bike-primary-bg" onclick="myFunction()">Try it</button>
+
+    <p class="text-[#E76F51]" id="demo"></p>
+
+    <script>
+        function myFunction() {
+            let marks = prompt("Please enter your marks", "100");
+            if (marks > 80) {
+                document.getElementById("demo").innerHTML =
+                    "You have obtained" + marks + "marks and grade A+";
+            }
+            else {
+                document.getElementById("demo").innerHTML =
+                    "You have obtained" + marks + "marks and grade F";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
